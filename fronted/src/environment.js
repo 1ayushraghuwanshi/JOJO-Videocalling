@@ -1,7 +1,8 @@
+let IS_PROD = true;
 
-const server = {
-    dev: "http://localhost:8000",
-    prod: "https://videocalling-backend-mhve.onrender.com"
-}
 
-export default server;
+const server = IS_PROD ? 
+     "https://videocalling-backend-mhve.onrender.com" :
+     "http://localhost:8000"
+
+     export default server;
